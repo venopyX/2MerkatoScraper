@@ -45,11 +45,11 @@ class CombinedScraper:
         return json.dumps(combined_data, indent=4)
 
 
-# #-------------------------------------------------------
-# #  ?            Example Usage
-# if __name__ == "__main__":
-#     directory_url = "https://www.2merkato.com/directory/"
-#     combined_scraper = CombinedScraper()
-#     combined_data = combined_scraper.scrape_combined_data(directory_url)
-#     print("Combined Data:", combined_data)
-# #-------------------------------------------------------
+#-------------------------------------------------------
+#  ?            Example Usage
+if __name__ == "__main__":
+    directory_url = "https://www.2merkato.com/directory/page:2"
+    combined_scraper = CombinedScraper()
+    combined_data = combined_scraper.scrape_combined_data(directory_url)
+    print("Combined Data:", combined_data)
+#-------------------------------------------------------
